@@ -1,5 +1,6 @@
 import os
 import json
+import pandas as pd
 print("hello world")
 # print(os.environ)
 
@@ -37,7 +38,7 @@ print("Access Token = {}\n".format(access_token))
 header = {'Authorization': 'Bearer ' + access_token}
 param = {'per_page': 200, 'page': 1}
 res = requests.get(activites_url, headers=header, params=param)
-my_dataset = requests.get(activites_url, headers=header, params=param).json()
+# my_dataset = requests.get(activites_url, headers=header, params=param).json()
 
 data = json.loads(res.text)
 # print(data)
@@ -49,3 +50,5 @@ for activity in data:
 print(json.dumps(data))
 # print(my_dataset[0]["name"])
 # print(my_dataset[0]["map"]["summary_polyline"])
+df = pd.DataFrame.from_dict(res.json())
+print(df)
