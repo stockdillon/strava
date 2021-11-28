@@ -12,3 +12,6 @@ https://github.com/angular/components/tree/master/src/google-maps#readme
 
 ### Flask
 https://youtu.be/GMppyAPbLYk
+
+### Python Dynamo Client
+https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#client
