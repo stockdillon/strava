@@ -9,3 +9,6 @@ https://towardsdatascience.com/using-the-strava-api-and-pandas-to-explore-your-a
 
 ### Google Maps
 https://github.com/angular/components/tree/master/src/google-maps#readme
+
+### Flask
+https://youtu.be/GMppyAPbLYk
