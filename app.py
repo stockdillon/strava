@@ -35,7 +35,7 @@ def proxy(path):
         # if not activity.get('total_photo_count') > 0:
         #     continue
         setPhotoUrls(activity)
-    resp = jsonify(resObj)
+    resp = jsonify({'activities': resObj})
     resp.headers['Access-Control-Allow-Origin'] = '*'
     resp.headers['Content-Type'] = 'application/json'
     resp.headers['Cache-Control'] = f'max-age={ONE_DAY_CACHE}'        
